@@ -221,10 +221,10 @@ related_cards: []    # 來源 card 清單
 
 | 腳本 | 功能 | 狀態 |
 |------|------|------|
-| fetch_webpage.py | 抓取一般網頁全文（requests + BeautifulSoup）| 待建立 |
-| fetch_arxiv.py | 下載 arXiv PDF → 呼叫 Gemini API 摘要 | 待建立 |
-| fetch_youtube.py | 抓取 YouTube 字幕（yt-dlp）| 待建立 |
-| verify_content.py | 驗證抓取內容完整性（檢查頭尾）| 待建立 |
+| fetch_webpage.py | 抓取一般網頁全文（requests + BeautifulSoup）| ✅ 已建立 |
+| fetch_arxiv.py | 下載 arXiv PDF 或讀取本地 PDF → 呼叫 Gemini API 摘要 | ✅ 已建立（支援 `--file` 本地 PDF）|
+| fetch_youtube.py | 抓取 YouTube 字幕（yt-dlp）| ✅ 已建立 |
+| verify_content.py | 驗證抓取內容完整性（檢查頭尾）| ✅ 已建立 |
 
 ### Gemini API 整合說明
 

@@ -1,0 +1,51 @@
+---
+title: AI Research Knowledge Base — 知識架構圖
+updated: 2026-04-19
+---
+
+```mermaid
+graph TD
+    subgraph 模型研究["AI模型研究"]
+        MA[模型架構]
+        TM[訓練方法]
+        MB[模型能力與行為]
+    end
+
+    subgraph 工程實作["AI工程實作"]
+        TD[訓練與部署]
+        IO[推論優化]
+    end
+
+    subgraph 應用Agent["AI應用與Agent"]
+        PE[Prompt工程]
+        AD[Agent設計模式]
+        RM[RAG與記憶系統]
+    end
+
+    subgraph 評測["AI評測"]
+        BM[Benchmark方法論]
+        ET[評測工具與框架]
+    end
+
+    subgraph 工具生態["AI工具生態"]
+        API[模型API比較]
+        FW[開發框架]
+    end
+
+    subgraph 安全對齊["AI安全與對齊"]
+        AM[對齊方法]
+        SR[安全風險與防範]
+    end
+
+    %% 跨主題連結（範例，隨筆記成長逐步補充）
+    TM -->|影響| MB
+    TM -->|實作參考| TD
+    MA -->|基礎| TM
+    PE -->|增強| AD
+    AD -->|使用| RM
+    MB -->|驅動| BM
+    AM -->|評估依據| BM
+```
+
+> 節點說明：每個節點對應 opinions/ 下的一個子資料夾。
+> 邊（連結）由 AI Agent 在更新永久筆記時維護，需人類確認後方可新增。
